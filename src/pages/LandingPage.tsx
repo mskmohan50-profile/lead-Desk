@@ -203,18 +203,30 @@ function FormSection() {
 
 function Footer() {
   return (
-    <footer className="border-t border-white/10 mt-12">
-      <div className="max-w-6xl mx-auto px-6 py-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-        <div className="flex items-center gap-2 text-slate-400">
-          <div className="w-7 h-7 rounded-lg bg-blue-500/20 flex items-center justify-center">
-            <BarChart3 className="w-4 h-4 text-blue-400" />
-          </div>
-          <span className="text-sm">LeadDesk Mini</span>
-        </div>
-        <p className="text-xs text-slate-500">
-          Built as a full-stack lead-capture demo. © {new Date().getFullYear()}
-        </p>
-      </div>
-    </footer>
+    <footer className="border-t border-white/10 px-6 py-5 text-center text-xs text-slate-500">
+  <p>
+    Built for{" "}
+    <a
+      href="https://digitalheroesco.com"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-cyan-400 hover:text-cyan-300 underline"
+    >
+      Digital Heroes Training Task
+    </a>
+  </p>
+
+  <p className="mt-2">
+    Live Demo:{" "}
+    <a
+      href="https://your-live-url.com"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-cyan-400 hover:text-cyan-300 underline"
+    >
+      https://your-live-url.com
+    </a>
+  </p>
+</footer>
   );
 }
